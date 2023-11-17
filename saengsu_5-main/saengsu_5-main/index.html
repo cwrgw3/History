@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="minho.css">
+    <title>승수</title>
+</head> 
+<body class="banselect">
+      
+    <div style="z-index: 0;"><p_title class="banselect" >-청운교, 백운교-</p_title></div>
+    <hr>
+    <img src="청운교백운교.jpg" style="width:100vw;">
+    
+    <div class="block_one"><object_title style="z-index: 1;" class="banselect">설명</object_title></div>
+    <div style="position: relative; top: 0%; left: 0%;"></div>
+        
+
+    <div class="menubar">
+
+        <!-- 메뉴 항목 -->
+        <div class="menu-item" style="width:70px; height: 70px; background-color: bisque; border-radius:50%;">
+          <img src="open.png" alt="Image 5" style="width:70px;">
+        </div>
+    </div>
+    
+    <style>
+        /* 메뉴바 스타일 */
+        .menubar {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          z-index: 9;
+          cursor: pointer;
+        }
+      
+        /* 하위 메뉴 스타일 */
+        .submenu {
+          position: fixed;
+          bottom: 70px;
+          right: 5vb;
+          display: none;
+          z-index: 8;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        /* 하위 메뉴 항목 스타일 */
+        .submenu li {
+          margin-bottom: 5vb;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+          position: relative;
+        }
+      
+        /* 하위 메뉴 이미지 스타일 */
+        .submenu li img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      </style>
+      
+      <div class="menubar"></div>
+      
+      <ul class="submenu">
+        <li><a href="https://cwrgw3.github.io/saengsu_1/"><img src="hwang.png" alt="Image 1"></a></li>
+        <li><a href="https://cwrgw3.github.io/saengsu_2/"><img src="an.png" alt="Image 2"></a></li>
+        <li><a href="https://cwrgw3.github.io/saengsu_3/"><img src="suk.png" alt="Image 3"></a></li>
+        <li><a href="https://cwrgw3.github.io/saengsu_4/"><img src="cumsungdae.png" alt="Image 4"></a></li>
+        <li><a href="https://cwrgw3.github.io/saengsu_5/"><img src="po.png" alt="Image 5"></a></li>
+      </ul>
+      
+      <script>
+        // 메뉴바와 하위 메뉴 요소 가져오기
+        const menubar = document.querySelector('.menubar');
+        const submenu = document.querySelector('.submenu');
+      
+        // 하위 메뉴를 초기에 숨김
+        submenu.style.display = 'none';
+      
+        // 메뉴바를 클릭하면 하위 메뉴를 열고 닫는 이벤트 처리
+        menubar.addEventListener('click', function() {
+          menubar.classList.toggle('clicked');
+          submenu.style.display = submenu.style.display === 'none' ? 'flex' : 'none';
+        });
+      </script>
+    <p style="font-family: star; font-size:200%;">
+        <p style="font-size: 50px; color: rgb(124, 180, 214); font-family: star; text-align: left;">장소</p>
+        <p font-size:100%;">경북 경주시 불국로 385, 불국사 (진현동)<p><a href="https://www.google.com/maps/place/%EC%84%9D%EB%B9%99%EA%B3%A0/data=!3m1!4b1!4m6!3m5!1s0x35664e65ae012731:0x7445e8df2ee143a9!8m2!3d35.8330464!4d129.2238709!16s%2Fm%2F076xr8m?hl=ko&entry=ttu">지도</a></p></p>
+        <br><br>
+        <p style="font-size: 50px; color: rgb(124, 180, 214); font-family: star; text-align: left;">역사</p>
+        <p>청운교/백운교,경상북도 경주시 진현동 불국사에 있는 통일신라시대의 화강석 석교다.토함산(吐含山) 줄기를 잘라 남향으로 석단(石壇)을 만들어 고대(高臺)를 이루었는데, 이 석단 전면(前面) 두 군데에 석계(石階)를 가설하여 당탑(堂塔)에 오르도록 하였다. 동쪽에 있는 2단의 석계가 바로 이것이며 위의 것을 청운교, 밑의 것을 백운교라고한다.</p>
+    </p>
+</body>
+</html>
